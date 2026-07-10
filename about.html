@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Cuvera Wires and Cables</title>
+    <style>
+        /* Global & Reset Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #fcfcfc;
+        }
+
+        /* Navigation Bar */
+        header {
+            background-color: #ffffff;
+            padding: 0.8rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 3px solid #e06d3b;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .brand-logo {
+            height: 60px;
+            width: auto;
+            display: block;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 2.5rem;
+        }
+
+        .nav-links a {
+            color: #1a1a1a;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: #e06d3b;
+        }
+
+        /* Inner Page Banner */
+        .banner {
+            background: linear-gradient(135deg, #262626 0%, #0d0d0d 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .banner h1 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        .banner p {
+            color: #e06d3b;
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Content Layout */
+        .container {
+            max-width: 900px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .about-card {
+            background: white;
+            padding: 3.5rem 3rem;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+            margin-bottom: 3rem;
+            border-top: 4px solid #1a1a1a;
+        }
+
+        .about-card h2 {
+            color: #1a1a1a;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .about-card h2::before {
+            content: '';
+            display: inline-block;
+            width: 8px;
+            height: 24px;
+            background-color: #e06d3b;
+            border-radius: 2px;
+        }
+
+        .about-card p {
+            color: #555;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        /* Highlights list */
+        .value-list {
+            margin-top: 2rem;
+            list-style: none;
+        }
+
+        .value-list li {
+            position: relative;
+            padding-left: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+            color: #444;
+        }
+
+        .value-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #e06d3b;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0f0f0f;
+            color: #777;
+            text-align: center;
+            padding: 2.5rem;
+            border-top: 1px solid #222;
+            font-size: 0.95rem;
+        }
+
+        .footer-company {
+            color: #b3b3b3;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="logo.jpg" alt="Cuvera Wires and Cables Logo" class="brand-logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="banner">
+        <h1>Corporate Overview</h1>
+        <p>Cuvera Industries Private Limited</p>
+    </section>
+
+    <!-- About Main Narrative -->
+    <main class="container">
+        <div class="about-card">
+            <h2>Who We Are</h2>
+            <p>Cuvera Industries Private Limited is a forward-thinking manufacturing entity dedicated to supplying top-tier electrical containment and distribution setups. Strategically operating out of Madhya Pradesh, our focus is engineered safety—manufacturing high-reliability copper and aluminum house wires and structural cables that lay the groundwork for modern architecture.</p>
+            <p>Our infrastructure products are optimized specifically for residential complexes, industrial sheds, and large commercial frameworks, providing robust current capabilities alongside highly resilient insulation shields.</p>
+        </div>
+
+        <div class="about-card">
+            <h2>Commitment to Safety &amp; Quality</h2>
+            <p>At Cuvera, we operate under a foundational principle: every millimeter of wire we produce directly protects lives and structural assets. That is why our products undergo severe quality thresholds before deployment.</p>
+            <ul class="value-list">
+                <li><strong>Premium Materials:</strong> We utilize exclusively high-purity electrolytic copper and high-grade aluminum lines for unmatched efficiency.</li>
+                <li><strong>Advanced Protection:</strong> Utilizing customized Flame Retardant (FR) PVC coatings to minimize insulation breakdowns.</li>
+                <li><strong>Strategic Execution:</strong> Precision engineering combined with streamlined regional distribution loops across the heart of India.</li>
+            </ul>
+        </div>
+    </main>
+
+    <!-- Global Footer -->
+    <footer>
+        <p class="footer-company">&copy; 2026 Cuvera Industries Private Limited. All rights reserved.</p>
+        <p style="font-size: 0.8rem; color: #444;">Registered Trademark &reg; Cuvera Wires and Cables</p>
+    </footer>
+
+</body>
+</html>
