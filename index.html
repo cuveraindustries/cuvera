@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cuvera Wires and Cables | Built for Safety. Wired for Life</title>
     <style>
-        /* Global & Reset Styles */
         * {
             margin: 0;
             padding: 0;
@@ -15,19 +14,19 @@
 
         body {
             line-height: 1.6;
-            color: #333;
-            background-color: #fcfcfc;
+            color: #334155;
+            background-color: #f8fafc;
         }
 
-        /* Navigation Bar */
+        /* Navigation Bar - Deep Slate Theme */
         header {
-            background-color: #ffffff;
+            background-color: #0f172a;
             padding: 0.8rem 2rem;
             position: sticky;
             top: 0;
             z-index: 1000;
-            border-bottom: 3px solid #e06d3b;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+            border-bottom: 4px solid #d97706;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
 
         nav {
@@ -38,16 +37,18 @@
             margin: 0 auto;
         }
 
-        /* Logo Image Container */
         .logo-container {
             display: flex;
             align-items: center;
         }
 
         .brand-logo {
-            height: 60px; /* Adjust height as needed to fit perfectly */
+            height: 55px;
             width: auto;
             display: block;
+            background-color: #ffffff;
+            padding: 4px 8px;
+            border-radius: 4px;
         }
 
         .nav-links {
@@ -57,7 +58,7 @@
         }
 
         .nav-links a {
-            color: #1a1a1a;
+            color: #f1f5f9;
             text-decoration: none;
             font-weight: 600;
             font-size: 1rem;
@@ -65,16 +66,15 @@
         }
 
         .nav-links a:hover, .nav-links a.active {
-            color: #e06d3b;
+            color: #fbbf24;
         }
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, #262626 0%, #0d0d0d 100%);
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
             color: white;
-            padding: 7rem 2rem;
+            padding: 6.5rem 2rem;
             text-align: center;
-            position: relative;
         }
 
         .hero-content {
@@ -83,55 +83,55 @@
         }
 
         .hero h1 {
-            font-size: 3.2rem;
-            margin-bottom: 1rem;
+            font-size: 3rem;
+            margin-bottom: 0.8rem;
             font-weight: 700;
-            letter-spacing: 0.5px;
+            color: #ffffff;
         }
 
         .hero .tagline {
-            font-size: 1.5rem;
-            color: #e06d3b;
-            font-weight: 600;
+            font-size: 1.4rem;
+            color: #fbbf24;
+            font-weight: 700;
             margin-bottom: 1.5rem;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 1.5px;
         }
 
         .hero p {
-            font-size: 1.2rem;
-            color: #b3b3b3;
+            font-size: 1.15rem;
+            color: #94a3b8;
             margin-bottom: 2.5rem;
         }
 
         .btn {
             display: inline-block;
-            background-color: #e06d3b;
+            background-color: #d97706;
             color: white;
-            padding: 0.85rem 2.5rem;
-            border-radius: 4px;
+            padding: 0.85rem 2.2rem;
+            border-radius: 6px;
             text-decoration: none;
             font-weight: 600;
-            transition: background-color 0.3s ease, transform 0.2s ease;
-            box-shadow: 0 4px 6px rgba(224, 109, 59, 0.2);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(217, 119, 6, 0.3);
         }
 
         .btn:hover {
-            background-color: #ff814a;
+            background-color: #b45309;
             transform: translateY(-2px);
         }
 
-        /* Main Grid Containers */
+        /* Content Sections */
         .container {
             max-width: 1200px;
-            margin: 5rem auto;
+            margin: 4.5rem auto;
             padding: 0 2rem;
         }
 
         .section-title {
             text-align: center;
-            color: #1a1a1a;
-            font-size: 2.2rem;
+            color: #0f172a;
+            font-size: 2rem;
             margin-bottom: 3rem;
             position: relative;
         }
@@ -139,26 +139,26 @@
         .section-title::after {
             content: '';
             display: block;
-            width: 60px;
+            width: 70px;
             height: 4px;
-            background-color: #e06d3b;
+            background-color: #d97706;
             margin: 10px auto 0 auto;
             border-radius: 2px;
         }
 
-        /* Products Display */
+        /* Product Cards */
         .product-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 2.5rem;
         }
 
         .product-card {
             background: white;
-            padding: 3rem 2.5rem;
-            border-radius: 8px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-            border-left: 5px solid #e06d3b;
+            padding: 2.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            border-top: 5px solid #d97706;
             transition: transform 0.3s ease;
         }
 
@@ -167,13 +167,13 @@
         }
 
         .product-card h3 {
-            font-size: 1.4rem;
+            font-size: 1.35rem;
             margin-bottom: 1rem;
-            color: #1a1a1a;
+            color: #0f172a;
         }
 
         .product-card p {
-            color: #666;
+            color: #64748b;
             margin-bottom: 1.5rem;
         }
 
@@ -184,27 +184,28 @@
         }
 
         .badge {
-            background-color: #f0f0f0;
-            color: #444;
+            background-color: #f1f5f9;
+            color: #334155;
             padding: 0.3rem 0.8rem;
             font-size: 0.8rem;
             font-weight: 600;
-            border-radius: 20px;
+            border-radius: 4px;
+            border: 1px solid #e2e8f0;
         }
 
-        /* Contact & Map Grid */
+        /* Contact & Map Section */
         .contact-layout {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 3rem;
+            gap: 2.5rem;
             align-items: start;
         }
 
         .info-panel {
-            background-color: #1a1a1a;
+            background-color: #0f172a;
             color: white;
-            padding: 3rem;
-            border-radius: 8px;
+            padding: 2.5rem;
+            border-radius: 10px;
             height: 450px;
             display: flex;
             flex-direction: column;
@@ -212,8 +213,8 @@
         }
 
         .info-panel h3 {
-            color: #e06d3b;
-            font-size: 1.6rem;
+            color: #fbbf24;
+            font-size: 1.5rem;
             margin-bottom: 1.5rem;
         }
 
@@ -223,45 +224,73 @@
 
         .info-item strong {
             display: block;
-            color: #a0a0a0;
+            color: #94a3b8;
             text-transform: uppercase;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             margin-bottom: 0.25rem;
+            letter-spacing: 0.5px;
         }
 
         .info-item p {
-            font-size: 1.1rem;
-            color: #e0e0e0;
+            font-size: 1.05rem;
+            color: #f8fafc;
+        }
+
+        /* Direct Action Links (WhatsApp & Email) */
+        .whatsapp-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #22c55e !important;
+            font-weight: bold;
+            font-size: 1.25rem;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .whatsapp-link:hover {
+            color: #4ade80 !important;
+            text-decoration: underline;
+        }
+
+        .email-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #fbbf24 !important;
+            font-weight: 600;
+            font-size: 1.05rem;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .email-link:hover {
+            color: #fde68a !important;
+            text-decoration: underline;
         }
 
         .map-container {
             height: 450px;
-            border-radius: 8px;
+            border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-            border: 1px solid #ddd;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            border: 1px solid #cbd5e1;
         }
 
         /* Footer */
         footer {
-            background-color: #0f0f0f;
-            color: #777;
+            background-color: #020617;
+            color: #64748b;
             text-align: center;
-            padding: 2.5rem;
-            border-top: 1px solid #222;
-            font-size: 0.95rem;
+            padding: 2rem;
+            border-top: 1px solid #1e293b;
+            font-size: 0.9rem;
         }
 
         footer p {
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.4rem;
         }
 
-        .footer-company {
-            color: #b3b3b3;
-            font-weight: 600;
-        }
-
-        /* Responsive Breakpoints */
         @media (max-width: 768px) {
             .contact-layout {
                 grid-template-columns: 1fr;
@@ -280,12 +309,13 @@
 </head>
 <body>
 
-    <!-- Header Navigation -->
+    <!-- Navigation Header -->
     <header>
         <nav>
             <div class="logo-container">
-                <!-- Points to your uploaded brand logo image -->
-                <img src="logo.jpg" alt="Cuvera Wires and Cables Logo" class="brand-logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="Cuvera Wires and Cables" class="brand-logo">
+                </a>
             </div>
             <ul class="nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
@@ -294,23 +324,23 @@
         </nav>
     </header>
 
-    <!-- Hero Showcase Section -->
+    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
             <h1>Cuvera Wires and Cables</h1>
             <div class="tagline">Built for Safety. Wired for Life</div>
-            <p>Engineered for excellence. We manufacture premium-grade copper and aluminum house wires and cables tailored specifically for reliable, heavy-duty commercial and residential building infrastructure.</p>
-            <a href="#contact-section" class="btn">Get In Touch</a>
+            <p>Engineered for excellence. Manufacturing high-grade copper and aluminum house wires and cables designed for heavy-duty commercial and residential building infrastructure.</p>
+            <a href="#contact-section" class="btn">Contact Us Today</a>
         </div>
     </section>
 
-    <!-- Products Capabilities -->
+    <!-- Product Showcase -->
     <main class="container">
-        <h2 class="section-title">Our Premium Product Range</h2>
+        <h2 class="section-title">Our Wire & Cable Solutions</h2>
         <div class="product-grid">
             <div class="product-card">
                 <h3>High-Conductivity Copper House Wire</h3>
-                <p>Designed strictly for residential and multi-story building projects. Delivers maximum energy efficiency, exceptional heat resistance, and long-lasting safety margins.</p>
+                <p>Designed for residential homes and high-rise structural wiring. Ensures maximum energy performance, low loss, and thermal resistance.</p>
                 <div class="badge-list">
                     <span class="badge">Pure Electrolytic Copper</span>
                     <span class="badge">FR / FRLS PVC Insulated</span>
@@ -318,38 +348,49 @@
             </div>
             <div class="product-card">
                 <h3>Robust Aluminum Building Cables</h3>
-                <p>Engineered for main power distribution lines and structural utility connections. Combining cost-effectiveness with high structural durability against challenging loads.</p>
+                <p>Built for main power utility distribution lines and commercial projects. Offers superior mechanical strength and durable insulation against overload.</p>
                 <div class="badge-list">
-                    <span class="badge">Premium Grade Aluminum</span>
+                    <span class="badge">Grade-A Aluminum</span>
                     <span class="badge">Heavy Duty Shielding</span>
                 </div>
             </div>
         </div>
     </main>
 
-    <!-- Contact & Geographic Pinning Section -->
-    <section id="contact-section" class="container" style="margin-top: 2rem;">
-        <h2 class="section-title">Plant Location & Contact</h2>
+    <!-- Location & Contact Section -->
+    <section id="contact-section" class="container">
+        <h2 class="section-title">Plant Location & Direct Contact</h2>
         <div class="contact-layout">
             
-            <!-- Company Info Panel -->
             <div class="info-panel">
                 <h3>Cuvera Industries Private Limited</h3>
+                
                 <div class="info-item">
-                    <strong>Manufacturing Unit Address</strong>
+                    <strong>Plant Address</strong>
                     <p>Khasara No. 11/9, Berdi-Lodhikheda Road,<br>Village Khedijasodi, Tehsil Sausar,<br>Dist. Pandhurna, Madhya Pradesh - 480106</p>
                 </div>
+
                 <div class="info-item">
-                    <strong>Call / WhatsApp Support</strong>
-                    <p style="color: #e06d3b; font-weight: bold; font-size: 1.2rem;">+91-7777888722</p>
+                    <strong>Click to Chat on WhatsApp</strong>
+                    <p>
+                        <a href="https://wa.me/917779998165?text=Hello%20Cuvera%20Industries,%20I%20have%20an%20inquiry%20regarding%20your%20wires%20and%20cables." target="_blank" class="whatsapp-link">
+                            💬 +91-7779998165
+                        </a>
+                    </p>
                 </div>
+
                 <div class="info-item">
-                    <strong>Official Email Address</strong>
-                    <p>cuveraindustries@gmail.com</p>
+                    <strong>Click to Email Us</strong>
+                    <p>
+                        <!-- Direct Email Mailto Link -->
+                        <a href="mailto:info@cuveraindustries.com?subject=Inquiry%20regarding%20Cuvera%20Wires%20and%20Cables" class="email-link">
+                            ✉️ info@cuveraindustries.com
+                        </a>
+                    </p>
                 </div>
             </div>
 
-            <!-- Embed Interactive Location Pinning using given coordinates -->
+            <!-- Google Map -->
             <div class="map-container">
                 <iframe 
                     width="100%" 
@@ -365,10 +406,10 @@
         </div>
     </section>
 
-    <!-- Global Footer -->
+    <!-- Footer -->
     <footer>
-        <p class="footer-company">&copy; 2026 Cuvera Industries Private Limited. All rights reserved.</p>
-        <p style="font-size: 0.8rem; color: #444;">Registered Trademark &reg; Cuvera Wires and Cables</p>
+        <p><strong>&copy; 2026 Cuvera Industries Private Limited.</strong> All rights reserved.</p>
+        <p style="font-size: 0.8rem; color: #475569;">Registered Trademark &reg; Cuvera Wires and Cables</p>
     </footer>
 
 </body>
